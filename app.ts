@@ -1,15 +1,17 @@
-// const person: {
-//   name: string;
-//   age: number;
-// } = {
-const person = {
-  name: "Thales",
-  age: 28,
-  hobbies: ["Movies", "Music", "Reading"],
-};
+function combine(input1: number | string, input2: number | string) {
+  let result;
 
-console.log(person.name);
+  if (typeof input1 === "number" && typeof input2 === "number") {
+    result = input1 + input2;
+  } else {
+    result = input1.toString() + input2.toString();
+  }
 
-for (const hobby of person.hobbies) {
-  console.log(hobby.toUpperCase());
+  return result;
 }
+
+const combinedAges = combine(28, 28);
+console.log(combinedAges);
+
+const combinedNames = combine("Thales", "Laura");
+console.log(combinedNames);

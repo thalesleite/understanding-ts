@@ -1,18 +1,4 @@
-// const person: {
-//   name: string;
-//   age: number;
-// } = {
-// const person: {
-//   name: string;
-//   age: number;
-//   hobbies: string[];
-//   role: [number, string]; // tuple
-// } = {
-//   name: "Thales",
-//   age: 28,
-//   hobbies: ["Movies", "Music", "Reading"],
-//   role: [2, "author"],
-// };
+"use strict";
 var Role;
 (function (Role) {
     Role[Role["ADMIN"] = 0] = "ADMIN";
@@ -23,11 +9,8 @@ var person = {
     name: "Thales",
     age: 28,
     hobbies: ["Movies", "Music", "Reading"],
-    role: Role.AUTHOR
+    role: Role.AUTHOR,
 };
-// person.role.push('admin') // works
-// person.role[1] = 10; // doesnt work
-// person.role = [0, "admin"]; // correct way
 console.log(person.name);
 for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
     var hobby = _a[_i];

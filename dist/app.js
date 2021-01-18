@@ -1,15 +1,2 @@
 "use strict";
-function combine(input1, input2) {
-    var result;
-    if (typeof input1 === "number" && typeof input2 === "number") {
-        result = input1 + input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
-}
-var combinedAges = combine(28, 0);
-console.log(combinedAges);
-var combinedNames = combine("Thales", "Lonely");
-console.log(combinedNames);
+//# sourceMappingURL=app.js.map

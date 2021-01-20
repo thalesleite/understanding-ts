@@ -1,15 +1,14 @@
 "use strict";
-var Person = (function () {
-    function Person(n) {
+class Person1 {
+    constructor(n) {
         this.age = 30;
         this.name = n;
     }
-    Person.prototype.greet = function (phrase) {
+    greet(phrase) {
         console.log(phrase + " " + this.name);
-    };
-    return Person;
-}());
-var user1;
-user1 = new Person("Thales");
+    }
+}
+let user1;
+user1 = new Person1("Thales");
 user1.greet("Hi there - I am");
 //# sourceMappingURL=interfaces.js.map

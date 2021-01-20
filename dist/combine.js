@@ -1,6 +1,6 @@
 "use strict";
 function combine(input1, input2) {
-    var result;
+    let result;
     if (typeof input1 === "number" && typeof input2 === "number") {
         result = input1 + input2;
     }
@@ -9,8 +9,8 @@ function combine(input1, input2) {
     }
     return result;
 }
-var combinedAges = combine(28, 0);
+const combinedAges = combine(28, 0);
 console.log(combinedAges);
-var combinedNames = combine("Thales", "Lonely");
+const combinedNames = combine("Thales", "Lonely");
 console.log(combinedNames);
 //# sourceMappingURL=combine.js.map
